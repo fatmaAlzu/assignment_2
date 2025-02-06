@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Leaderboard</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .gold {
+      background-color: gold;
+    }
+    .silver {
+      background-color: silver;
+    }
+    .bronze {
+      background-color: #cd7f32;
+    }
+    .alt-row {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="images/logo.jpg" width="100px" height="100px">
+  <h1>LMS - Learning Management System</h1>
+</header>
+
+<div>
+  <a href="#">Homepage</a> | <a href="#">Courses</a>
+</div>
+
+<main>
+  <table>
+    <tr>
+      <th colspan="5">Leaderboard</th>
+    </tr>
+    <tr>
+      <th>Rank</th>
+      <th>Profile Picture</th>
+      <th>Name</th>
+      <th>Total Score</th>
+      <th>Course</th>
+    </tr>
+    <tr class="gold">
+      <td>1</td>
+      <td><img src="images/profile1.png" width="50px" height="50px"></td>
+      <td>Student A</td>
+      <td>95</td>
+      <td>Web Development</td>
+    </tr>
+    <tr class="silver">
+      <td rowspan="2">2</td>
+      <td><img src="images/profile2.png" width="50px" height="50px"></td>
+      <td>Student B</td>
+      <td>90</td>
+      <td>Web Development</td>
+    </tr>
+    <tr class="silver">
+      <td><img src="images/profile3.png" width="50px" height="50px"></td>
+      <td>Student C</td>
+      <td>90</td>
+      <td>Web Development</td>
+    </tr>
+    <tr class="bronze alt-row">
+      <td>3</td>
+      <td><img src="images/profile4.png" width="50px" height="50px"></td>
+      <td>Student D</td>
+      <td>85</td>
+      <td>Web Development</td>
+    </tr>
+    <tr class="alt-row">
+      <td>4</td>
+      <td><img src="images/profile5.png" width="50px" height="50px"></td>
+      <td>Student E</td>
+      <td>80</td>
+      <td>Web Development</td>
+    </tr>
+  </table>
+</main>
+
+<footer>
+  <p>&copy; 2025 LMS - Learning Management System</p>
+</footer>
+
+</body>
+</html>
