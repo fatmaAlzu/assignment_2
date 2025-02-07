@@ -3,12 +3,19 @@
 <head>
   <title>Leaderboard</title>
   <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .container, main {
+      padding: 30px;
+    }
     table {
       width: 100%;
       border-collapse: collapse;
     }
     th, td {
-      border: 1px solid black;
+      border: 1px solid grey;
       padding: 8px;
       text-align: center;
     }
@@ -21,29 +28,39 @@
     .silver {
       background-color: silver;
     }
-    .bronze {
+    tr.bronze {
       background-color: #cd7f32;
     }
-    .alt-row {
+    .alt-row1 {
+      background-color: lightgrey;
+    }
+    tr.alt-row {
       background-color: #f9f9f9;
+    }
+    .leaderboard-header {
+      background-color: rgb(100, 170, 100);
+      color: white;
+      font-size: 35px;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <img src="images/logo.jpg" width="100px" height="100px">
-  <h1>LMS - Learning Management System</h1>
-</header>
+<div class="container">
+  <header>
+    <img src="images/logo.jpg" width="100px" height="100px" alt="LMS Logo">
+    <h1>LMS - Learning Management System</h1>
+  </header>
 
-<div>
-  <a href="#">Homepage</a> | <a href="#">Courses</a>
+  <div>
+    <a href="#">Homepage</a> | <a href="#">Courses</a>
+  </div>
 </div>
 
 <main>
   <table>
     <tr>
-      <th colspan="5">Leaderboard</th>
+      <th class="leaderboard-header" colspan="5">Leaderboard</th>
     </tr>
     <tr>
       <th>Rank</th>
@@ -54,44 +71,53 @@
     </tr>
     <tr class="gold">
       <td>1</td>
-      <td><img src="images/profile1.png" width="50px" height="50px"></td>
-      <td>Student A</td>
+      <td><img src="images/student.png" width="50px" height="50px" alt="Student Profile"></td>
+      <td>John Doe</td>
       <td>95</td>
       <td>Web Development</td>
     </tr>
     <tr class="silver">
       <td rowspan="2">2</td>
-      <td><img src="images/profile2.png" width="50px" height="50px"></td>
-      <td>Student B</td>
+      <td><img src="images/student.png" width="50px" height="50px" alt="Student Profile"></td>
+      <td>Jane Smith</td>
       <td>90</td>
-      <td>Web Development</td>
+      <td>Data Structures</td>
     </tr>
     <tr class="silver">
-      <td><img src="images/profile3.png" width="50px" height="50px"></td>
-      <td>Student C</td>
+      <td><img src="images/student.png" width="50px" height="50px" alt="Student Profile"></td>
+      <td>Emily White</td>
       <td>90</td>
-      <td>Web Development</td>
+      <td>Algorithms</td>
     </tr>
-    <tr class="bronze alt-row">
+    <tr class="bronze">
       <td>3</td>
-      <td><img src="images/profile4.png" width="50px" height="50px"></td>
-      <td>Student D</td>
+      <td><img src="images/student.png" width="50px" height="50px" alt="Student Profile"></td>
+      <td>Michael Brown</td>
       <td>85</td>
-      <td>Web Development</td>
+      <td>Machine Learning</td>
     </tr>
     <tr class="alt-row">
       <td>4</td>
-      <td><img src="images/profile5.png" width="50px" height="50px"></td>
-      <td>Student E</td>
+      <td><img src="images/student.png" width="50px" height="50px" alt="Student Profile"></td>
+      <td>Sarah Johnson</td>
       <td>80</td>
-      <td>Web Development</td>
+      <td>Networking</td>
+    </tr>
+    <tr class="alt-row1">
+      <td>5</td>
+      <td><img src="images/student.png" width="50px" height="50px" alt="Student Profile"></td>
+      <td>Rob Miller</td>
+      <td>75</td>
+      <td>Networking</td>
     </tr>
   </table>
 </main>
 
-<footer>
-  <p>&copy; 2025 LMS - Learning Management System</p>
-</footer>
+<div class="container">
+  <footer>
+    <p>&copy; 2025 LMS - Learning Management System</p>
+  </footer>
+</div>
 
 </body>
 </html>
