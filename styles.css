@@ -1,0 +1,39 @@
+header {
+    background-color : #004080;
+    padding : 20px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    color: white;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #003366;
+    padding: 10px;
+}
+nav a:hover {
+   text-decoration: underline;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+main {
+    background-color: #d4d4d4;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+Main ul {
+    display: inline-block;
+    text-align: left;
+}
+footer {
+   background-color: #004080;
+    color: white;
+    padding: 20px; 
+    text-align: center;
+}
