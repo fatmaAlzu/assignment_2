@@ -1,98 +1,121 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title> LMS - Learning Management System</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <header>
-            <img src="logo.jpg" height="80" width="80">
-            <h1>Learning Management System</h1>
-        </header>
-
-        <div>
-            <a href="index.html">Homepage</a><br><br>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course View - LMS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="LMS Logo" style="width: 100px; height: 100px;">
+        <h1>LMS - Learning Management System</h1>
+        
+    </header>
+    <div>
+        <nav>
+            <a href="index.html">Homepage</a>
+        </nav>
+    </div>
+    <main>
+        <div class = "term">
+        <label for="term">Select Term:</label>
+        <select id="term" name="term">
+            <option value="Winter 2025">Winter 2025</option>
+            <option value="Winter 2024">Winter 2024</option>
+            <option value="Fall 2025">Fall 2025</option>
+            <option value="Fall 2024">Fall 2024</option>
         </div>
-
-        <main> 
-            <div class="term-selector">
-                <label for="term">Select Term:</label>
-                <select id="term">
-                    <option value="winter">Winter 2025</option>
-                    <option value="fall">Fall 2024</option>
-                    <option value="spring">Spring 2024</option>
-                    <option value="summer">Summer 2024</option>
-                </select>
-            </div>
-
-            <section class="course-section">
-                <h2>Enrolled Courses</h2>
-                <hr>
-                <table border="0" width="100%">
-                    <tr>
-                        <td>
-                            <img src="images/course1.jpg" width="200" height="200"><br>
+        </select>
+        
+        <section class="Enrolled">
+			
+            <h2>Enrolled Courses</h2>
+            <hr>
+            <table>
+				<tr>
+					<td>
+                
+						<div class = "course-tile">
+                            <img src="images/course1.jpg" alt="Course 1" width="250">
                             <p>Course Name: Web Development</p>
-                            <p>Course Code:WD381</p>
+                            <p>Course Code: WD381</p>
                             <a href="attempt_quiz.html">Attempt Quiz</a>
-                        </td>
-                        <td>
-                            <img src="images/course1.jpg" width="200" height="200"><br>
-                            <p>Course Name:Data Structures</p>
+                        </div>
+					</td>
+					<td>
+						<div class = "course-tile">
+                            <img src="images/course1.jpg" alt="Course 1" width="250">
+                            <p>Course Name: Data Structures</p>
                             <p>Course Code: DS371</p>
                             <a href="attempt_quiz.html">Attempt Quiz</a>
-                        </td>
-                        <td>
-                            <img src="images/course1.jpg" width="200" height="200"><br>
-                            <p>Course Name:DBMS</p>
-                            <p>Course Code:DB346</p>
+                        </div>
+					</td>
+                    <td>
+						<div class = "course-tile">
+                            <img src="images/course1.jpg" alt="Course 1" width="250">
+                            <p>Course Name: DBMS</p>
+                            <p>Course Code: DB346</p>
                             <a href="attempt_quiz.html">Attempt Quiz</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="images/course1.jpg" width="200" height="200"><br>
-                            <p>Course Name:Software Testing</p>
-                            <p>Course Code:ST484</p>
+                        </div>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<div class = "course-tile">
+                            <img src="images/course1.jpg" alt="Course 1" width="250">
+                            <p>Course Name: Software Testing</p>
+                            <p>Course Code: ST484</p>
                             <a href="attempt_quiz.html">Attempt Quiz</a>
-                        </td>
-                        <td>
-                            <img src="images/course1.jpg" width="200" height="200"><br>
-                            <p>Course Name:Software Architectures</p>
-                            <p>Course Code:SA396</p>
+                        </div>
+					</td>
+					<td>
+						<div class = "course-tile">
+                            <img src="images/course1.jpg" alt="Course 1" width="250">
+                            <p>Course Name: Software Architectures</p>
+                            <p>Course Code: SA396</p>
                             <a href="attempt_quiz.html">Attempt Quiz</a>
-                        </td>
-                        <td></td> 
-                    </tr>
-                </table>
-            </section>
-
-            <section class="pending">
-                <h2>Pending Invitations</h2>
-                <hr>
-                <table border="0">
-                    <tr>
-                        <td>
-                            <img src="images/course2.jpg" width="200" height="200"><br>
-                            <p>Course Name:Data Science</p>
-                            <p>Course Code:DS102</p>
-                            <button style="background-color: green; color: white;">Accept</button>
-                            <button style="background-color: red; color: white;">Reject</button>
-                        </td>
-                        <td>
-                            <img src="images/course2.jpg" width="200" height="200"><br>
-                            <p>Course Name:Machine Learning</p>
-                            <p>Course Code:ML105</p>
-                            <button style="background-color: green; color: white;">Accept</button>
-                            <button style="background-color: red; color: white;">Reject</button>
-                        </td>
-                    </tr>
-                </table>
-            </section>
-
-            <footer>
-                <p>&copy; 2025 LMS. All rights reserved.</p>
-            </footer>
-        </main>
-    </body>
+                        </div>
+					</td>
+				</tr>
+            </table> 
+        </section>
+        
+        <div>
+        </div>
+        <br>
+        <br>
+        <section class="Enrolled">
+	
+            <h2>Pending Invitations</h2>
+            <hr>
+            <table>
+				<tr>
+					<td>
+                        <div class = "coursetile-2">
+                            <img src="images/course2.jpg" alt="Course 2" width="250">
+                            <p>Course Name: Data Science</p>
+                            <p>Course Code: DS102</p>
+                            <button style="background-color: rgb(153, 255, 153);">Accept</button>
+                            <button style="background-color: rgb(252, 133, 133);">Decline</button>
+                        </div>
+                    </td> 
+                    <td>
+                        <div class = "coursetile-2">
+                            <img src="images/course2.jpg" alt="Course 2" width="250">
+                            <p>Course Name: Machine Learning</p>
+                            <p>Course Code: ML105</p>
+                            <button style="background-color: rgb(153, 255, 153);">Accept</button>
+                            <button style="background-color: rgb(252, 133, 133);">Decline</button>
+                        </div>
+                    </td> 
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 LMS. All rights reserved.</p>
+    </footer>
+</body>
 </html>

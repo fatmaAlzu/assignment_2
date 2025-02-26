@@ -1,67 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title> LMS - Learning Management System</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attempt Quiz</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <img src="logo.png" alt="Logo" class="banner">
+        <h1>Attempt Quiz</h1>
+    </header>
 
-<header>
-  <img src="images/logo.jpg" width = "100px", height = "100px" >
-  <h1>LMS - Learning Management System</h1>
-  <h2>LMS - Attempt Quiz</h2>
-</header>
+    <main>
+        <div class="course-quiz-details">
+            <h2>Course: Web Development</h2>
+            <p>Quiz: HTML and CSS Basics</p>
+        </div>
 
-<div>
-  <a href = "index.html">Homepage</a>|
-  <a href = "course_view.html">Courses</a><br><br>
-</div>
+        <form action="submit_quiz.html" method="post">
+            <div class="quiz-options">
+                <p>1. What does HTML stand for?</p>
+                <label>
+                    <input type="radio" name="q1" value="a"> Hyper Text Markup Language
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="b"> Hyperlinks and Text Markup Language
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="c"> Home Tool Markup Language
+                </label>
+            </div>
 
-<main>
-    <br>
-<div>
-    <img src="/images/banner.jpg" width = "675">
-</div>
-  
+            <div class="quiz-options">
+                <p>2. Which tag is used to define a hyperlink in HTML?</p>
+                <label>
+                    <input type="radio" name="q2" value="a"> &lt;a&gt;
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="b"> &lt;link&gt;
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="c"> &lt;href&gt;
+                </label>
+            </div>
 
-  <h2>Course Name: Web Development</h2>
-  <h3>Course Code: WD381</h3>
+            <button type="submit">Submit Quiz</button>
+        </form>
 
-  <p><strong>Topic:</strong> HTML Basics</p>
-  <p><strong>Deadline:</strong> 11:59 PM, February 10, 2025</p>
-  <p><strong>Attempts Allowed:</strong> 1</p>
+        <button class="finish-quiz">Finish Quiz</button>
+    </main>
 
-  <div>
-    <p><strong>Question 1</strong></p>
-    <p>What does HTML stand for?</p>
-    <input type="radio" id="firstoption" name="q1">
-    <label for="firstoption">Hyper Text Markup Language</label><br>
-    <input type="radio" id="second_option" name="q1">
-    <label for="second_option">Home Tool Markup Language</label><br>
-    <button>Submit Answer</button>
-  </div>
-
-  <div>
-    <p><strong>Question 2</strong></p>
-    <p>Which of the following are HTML elements? (Select all that apply)</p>
-    <input type="checkbox" id="optionA">
-    <label for="optionA">&lt;div&gt;</label><br>
-    <input type="checkbox" id="optionB">
-    <label for="optionB">&lt;span&gt;</label><br>
-    <button>Submit Answer</button>
-  </div>
-<br>
-
-<div>
-  <button onclick="window.location.href='leadershipboard.html';">Finish Quiz</button>
-</div>
-
-  
-</main>
-
-<footer>
-  <p>&copy; 2025 LMS. All rights reserved.</p>
-</footer>
-
+    <footer>
+        <p>&copy; 2025 QuizApp. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>

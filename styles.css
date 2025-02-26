@@ -1,143 +1,148 @@
-
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-
+/* Header */
 header {
-    background-color: #004080;
-    padding: 20px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
+  background-color: #004080;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
 }
 
 header img {
-    margin-right: 20px;
-    border-radius: 50%;
+  height: 80px;
+  width: 80px;
 }
 
-header h1 {
-    margin: 0;
-    text-align: left;
-}
-h2 {
-    color: #004080;
-}
-
+/* Navigation Bar */
 nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #003366;
-    padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #003366;
+  padding: 10px;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-
+/* Main Content */
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh; 
-    width: 100%;
-    padding: 20px;
-    margin: 20px;
+  text-align: center;
 }
 
+#About-LMS {
+  background-color: #d4d4d4;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
 
+/* Login Page Styling */
 #login-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    position: relative;
+  background-color: #d4d4d4;
+  padding: 30px;
+  margin-left: 150px;
+  margin-right: 150px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
-
-#login {
-    background-color: #d4d4d4;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    width: 350px;
-}
-
-
-#login h2 {
-    font-size: 22px;
-    font-weight: bold;
-    color: #004080;
-    margin-bottom: 20px;
-}
-
-
-input[type="text"], 
+input[type="text"],
 input[type="password"] {
-    width: 90%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 2px solid darkgray;
-    background-color: lightyellow;
-    font-size: 16px;
-    margin-bottom: 15px;
+  background-color: lightyellow;
+  padding: 10px;
+  border-radius: 5px;
+  border: 3px solid darkgray;
 }
-
 
 button {
-    background-color: #008000;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 350px;
-    margin-top: 15px; 
+  background-color: #008000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: #006600;
+  background-color: #006600;
 }
 
-
 #forgot-password {
-    color: #004080;
-    text-decoration: none;
-    font-size: 14px;
-    margin-top: 10px;
+  color: #004080;
+  text-decoration: none;
 }
 
 #forgot-password:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+/*course View Page Styling*/
+.term {
+  background-color: #d4d4d4;
+  padding: 5px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+/* Term Selection Styling */
+select {
+  background-color: lightyellow;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* Course Tiles Styling */
+.course-tile {
+  background-color: #e6f2ff; /* Light blue background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box-shadow effect */
+  padding: 15px; /* Padding */
+  margin: 20px; /* Margin */
+  border-radius: 10px; /* Border radius */
+  display: inline-block; /* Display inline-block */
+  box-sizing: border-box; /* Box-sizing border-box */
 }
 
 
+/* Accept / Decline Buttons Styling */
+.accept-button {
+  background-color: #4CAF50;
+  color: white;
+ 
+}
+
+.accept-button:hover {
+  background-color: #265e28;
+}
+
+.decline-button {
+  background-color: #D32F2F;
+  color: white;
+  
+}
+
+.decline-button:hover {
+  background-color: #821b1b;
+}
+/* Footer */
 footer {
-    background-color: #004080;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
