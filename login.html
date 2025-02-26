@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title> LMS - Learning Management System</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <img src="logo.jpg" height="80" width="80">
-        <h1>LMS - Learning Management System</h1>
-    </header>
-    <nav>
-        <a href="index.html">Homepage</a>
-    </nav>
-    <main>
-        <div>
-            <h2>LMS Login</h2>
-        </div>
-        <div id="login-container">
-            
-            <form action="course_view.html" method="post">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required><br><br>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required><br><br>
+    <head>
+        <title> LMS - Learning Management System</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <header>
+            <img src="logo.jpg" height="80" width="80">
+            <h1>LMS - Learning Management System</h1>
+        </header>
+
+        <nav>
+            <a href="index.html">Homepage</a>
+        </nav>
+        <h2>LMS Login</h2>
+        <main>
+            <div id="login-container">
+                <section id="login">
+                   
+                    <form action="course_view.html" method="post">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required><br>
+
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required><br>
+                    </form>
+                </section>
+
+               
+                <button type="submit">Login</button>
+
                 
-            </form>
-        </div>
-        <div>
-        <button type="submit">Login</button>
-    </div>
-    <div>
-        <a href="#" id="forgot-password">Forgot Password?</a>
-    </div>
-    </main>
-    <footer>
-        <p>&copy; 2025 LMS. All rights reserved.</p>
-    </footer>
-</body>
+                <a href="#" id="forgot-password">Forgot Password?</a>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 LMS. All rights reserved.</p>
+        </footer>
+
+    </body>
 </html>

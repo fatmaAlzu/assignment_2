@@ -52,40 +52,68 @@ main {
 }
 
 /* Login Page Styling */
+
 #login-container {
-  background-color: #d4d4d4;
-  padding: 30px;
-  margin-left: 150px;
-  margin-right: 150px;
-  border-radius: 30px;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
 }
 
-input[type="text"],
+
+#login {
+  background-color: #d4d4d4;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 350px;
+}
+
+
+#login h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #004080;
+  margin-bottom: 20px;
+}
+
+
+input[type="text"], 
 input[type="password"] {
-  background-color: lightyellow;
+  width: 90%;
   padding: 10px;
   border-radius: 5px;
-  border: 3px solid darkgray;
+  border: 2px solid darkgray;
+  background-color: lightyellow;
+  font-size: 16px;
+  margin-bottom: 15px;
 }
+
 
 button {
   background-color: #008000;
   color: white;
   padding: 10px 20px;
+  font-size: 16px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  width: 350px;
+  margin-top: 15px; 
 }
 
 button:hover {
   background-color: #006600;
 }
 
+
 #forgot-password {
   color: #004080;
   text-decoration: none;
+  font-size: 14px;
+  margin-top: 10px;
 }
 
 #forgot-password:hover {
