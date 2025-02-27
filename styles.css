@@ -120,53 +120,140 @@ button:hover {
   text-decoration: underline;
 }
 
-/*course View Page Styling*/
-.term {
-  background-color: #d4d4d4;
-  padding: 5px;
-  margin: 20px;
-  border-radius: 5px;
-}
 
-/* Term Selection Styling */
-select {
+/*courseview css*/
+/* Term Selection Dropdown */
+#term {
   background-color: lightyellow;
   border-radius: 5px;
   padding: 5px;
 }
 
-/* Course Tiles Styling */
-.course-tile {
-  background-color: #e6f2ff; /* Light blue background */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box-shadow effect */
-  padding: 15px; /* Padding */
-  margin: 20px; /* Margin */
-  border-radius: 10px; /* Border radius */
-  display: inline-block; /* Display inline-block */
-  box-sizing: border-box; /* Box-sizing border-box */
+/* Enrolled and Pending Courses Sections */
+section.Enrolled {
+  margin: 20px;
 }
 
+section.Enrolled h2 {
+  font-size: 24px;
+  color: #004080;
+}
 
-/* Accept / Decline Buttons Styling */
-.accept-button {
+section.Enrolled hr {
+  border: 1px solid #004080;
+  margin-bottom: 20px;
+}
+
+section.Enrolled table {
+  width: 100%;
+  border-spacing: 15px;
+  text-align: left;
+}
+
+section.Enrolled td {
+  width: 33.33%;
+  vertical-align: top;
+}
+
+section.Enrolled div {
+  background-color: #e6f2ff; /* Light blue background */
+  padding: 20px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+section.Enrolled img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+section.Enrolled p {
+  font-size: 18px;
+  color: #333;
+}
+
+section.Enrolled a {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #004080;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+section.Enrolled a:hover {
+  background-color: #003366;
+}
+
+/* Accept/Decline Buttons for Pending Courses */
+button {
+  background-color: #4CAF50; /* Default green color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #265e28; /* Dark green on hover */
+}
+
+button[style*="rgb(252, 133, 133);"] {
+  background-color: #D32F2F; /* Red for Decline */
+}
+
+button[style*="rgb(252, 133, 133);"]:hover {
+  background-color: #821b1b; /* Dark red on hover */
+}
+/* Leaderboard css Table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.Leaderboard {
   background-color: #4CAF50;
   color: white;
- 
+  font-size: 36px;
+}
+tr:nth-child(even) {
+  background-color: #f9f9f9;
 }
 
-.accept-button:hover {
-  background-color: #265e28;
+tr:nth-child(odd) {
+  background-color: #e4e2e2;
 }
 
-.decline-button {
-  background-color: #D32F2F;
-  color: white;
-  
+.leaderboard-table tr:first-child {
+  background-color: #FFD700; /* Gold for 1st place */
 }
 
-.decline-button:hover {
-  background-color: #821b1b;
+.leaderboard-table tr:nth-child(3) {
+  background-color: #C0C0C0; /* Silver for 2nd place */
 }
+
+.leaderboard-table tr:nth-child(4) {
+  background-color: #CD7F32; /* Bronze for 3rd place */
+}
+
+img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+}
+
 /* Footer */
 footer {
   background-color: #004080;
