@@ -9,52 +9,59 @@
 <header>
   <img src="images/logo.jpg" width = "100px", height = "100px" >
   <h1>LMS - Learning Management System</h1>
-  <h2>LMS - Attempt Quiz</h2>
+  
 </header>
 
-<div>
-  <a href = "index.html">Homepage</a>|
+<nav>
+  <a href = "index.html">Homepage</a>
   <a href = "course_view.html">Courses</a><br><br>
-</div>
+</nav>
 
 <main>
     <br>
-<div>
-    <img src="/images/banner.jpg" width = "675">
+<div class = "quiz-banner">
+    <img src="/images/banner.jpg">
 </div>
   
-
+<div class="quiz-details">
   <h2>Course Name: Web Development</h2>
   <h3>Course Code: WD381</h3>
 
   <p><strong>Topic:</strong> HTML Basics</p>
   <p><strong>Deadline:</strong> 11:59 PM, February 10, 2025</p>
   <p><strong>Attempts Allowed:</strong> 1</p>
+</div>
 
-  <div>
     <p><strong>Question 1</strong></p>
     <p>What does HTML stand for?</p>
-    <input type="radio" id="firstoption" name="q1">
-    <label for="firstoption">Hyper Text Markup Language</label><br>
-    <input type="radio" id="second_option" name="q1">
-    <label for="second_option">Home Tool Markup Language</label><br>
-    <button>Submit Answer</button>
-  </div>
+<div class = "quiz-question">
+    <div class = "quiz-options">
+        <input type="radio" id="firstoption" name="q1">
+        <label for="firstoption">Hyper Text Markup Language</label><br>
+        <input type="radio" id="second_option" name="q1">
+        <label for="second_option">Home Tool Markup Language</label><br>
+    </div>
+</div>
+<button class = "submit-btn">Submit Answer</button>
 
-  <div>
     <p><strong>Question 2</strong></p>
     <p>Which of the following are HTML elements? (Select all that apply)</p>
+  <div class = "quiz-question">
+    <div class = "quiz-options">
     <input type="checkbox" id="optionA">
     <label for="optionA">&lt;div&gt;</label><br>
     <input type="checkbox" id="optionB">
-    <label for="optionB">&lt;span&gt;</label><br>
-    <button>Submit Answer</button>
+    <label for="optionB">&lt;span&gt;</label>
+    </div>
+    <br>
   </div>
+
+  <button class = "submit-btn">Submit Answer</button>
 <br>
 
-<div>
-  <button onclick="window.location.href='leadershipboard.html';">Finish Quiz</button>
-</div>
+
+  <button class = "finish-btn" onclick="window.location.href='leadershipboard.html';">Finish Quiz</button>
+
 
   
 </main>

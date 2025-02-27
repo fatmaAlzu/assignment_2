@@ -1,143 +1,340 @@
-
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-
+/* Header */
 header {
-    background-color: #004080;
-    padding: 20px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
+  background-color: #004080;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
 }
 
 header img {
-    margin-right: 20px;
-    border-radius: 50%;
+  height: 80px;
+  width: 80px;
 }
 
-header h1 {
-    margin: 0;
-    text-align: left;
-}
-h2 {
-    color: #004080;
-}
-
+/* Navigation Bar */
 nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #003366;
-    padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #003366;
+  padding: 10px;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-
+/* Main Content */
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh; 
-    width: 100%;
-    padding: 20px;
-    margin: 20px;
+  text-align: center;
 }
 
+#About-LMS {
+  background-color: #d4d4d4;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+/* Login Page Styling */
 
 #login-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
 }
 
 
 #login {
-    background-color: #d4d4d4;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    width: 350px;
+  background-color: #d4d4d4;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 350px;
 }
 
 
 #login h2 {
-    font-size: 22px;
-    font-weight: bold;
-    color: #004080;
-    margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #004080;
+  margin-bottom: 20px;
 }
 
 
 input[type="text"], 
 input[type="password"] {
-    width: 90%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 2px solid darkgray;
-    background-color: lightyellow;
-    font-size: 16px;
-    margin-bottom: 15px;
+  width: 90%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid darkgray;
+  background-color: lightyellow;
+  font-size: 16px;
+  margin-bottom: 15px;
 }
 
 
 button {
-    background-color: #008000;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 350px;
-    margin-top: 15px; 
+  background-color: #008000;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 350px;
+  margin-top: 15px; 
 }
 
 button:hover {
-    background-color: #006600;
+  background-color: #006600;
 }
 
 
 #forgot-password {
-    color: #004080;
-    text-decoration: none;
-    font-size: 14px;
-    margin-top: 10px;
+  color: #004080;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 10px;
 }
 
 #forgot-password:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 
+/*courseview css*/
+/* Term Selection Dropdown */
+#term {
+  background-color: lightyellow;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* Enrolled and Pending Courses Sections */
+section.Enrolled {
+  margin: 20px;
+}
+
+section.Enrolled h2 {
+  font-size: 24px;
+  color: #004080;
+}
+
+section.Enrolled hr {
+  border: 1px solid #004080;
+  margin-bottom: 20px;
+}
+
+section.Enrolled table {
+  width: 100%;
+  border-spacing: 15px;
+  text-align: left;
+}
+
+section.Enrolled td {
+  width: 33.33%;
+  vertical-align: top;
+}
+
+section.Enrolled div {
+  background-color: #e6f2ff; /* Light blue background */
+  padding: 20px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+section.Enrolled img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+section.Enrolled p {
+  font-size: 18px;
+  color: #333;
+}
+
+section.Enrolled a {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #004080;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+section.Enrolled a:hover {
+  background-color: #003366;
+}
+
+/* Accept/Decline Buttons for Pending Courses */
+button {
+  background-color: #4CAF50; /* Default green color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #265e28; /* Dark green on hover */
+}
+
+button[style*="rgb(252, 133, 133);"] {
+  background-color: #D32F2F; /* Red for Decline */
+}
+
+button[style*="rgb(252, 133, 133);"]:hover {
+  background-color: #821b1b; /* Dark red on hover */
+}
+/* Leaderboard css Table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.Leaderboard {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 36px;
+}
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+  background-color: #e4e2e2;
+}
+
+.leaderboard-table tr:first-child {
+  background-color: #FFD700; /* Gold for 1st place */
+}
+
+.leaderboard-table tr:nth-child(3) {
+  background-color: #C0C0C0; /* Silver for 2nd place */
+}
+
+.leaderboard-table tr:nth-child(4) {
+  background-color: #CD7F32; /* Bronze for 3rd place */
+}
+
+img.pfp {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+}
+
+/* Quiz Page Styling */
+
+/* Quiz Banner */
+.quiz-banner img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* Quiz Details */
+.quiz-details {
+  background-color: lightblue;
+  padding: 20px;
+  margin-left:250px;
+  margin-right:250px;
+  text-align: center;
+  font-weight: bold;
+}
+.quiz-details h2,
+.quiz-details h3 {
+  color:#003366
+}
+
+/* Quiz Questions */
+.quiz-question {
+  background-color: #cacaca;
+  text-align: left;
+  margin-left: 250px;
+  margin-right: 250px;
+  padding: 20px;
+}
+
+.quiz-options {
+  background-color: #cacaca;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  margin-left: 125px;
+  margin-right: 125px;
+  margin: auto;
+}
+
+/* Submit Answer Button */
+.submit-btn {
+  background-color: lightblue;
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background-color: darkblue;
+  color: white;
+}
+
+/* Finish Quiz Button */
+.finish-btn {
+  background-color: #D32F2F;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /* margin-top: 20px; */
+  font-size: 14px;
+}
+
+.finish-btn:hover {
+  background-color: #821b1b;
+}
+
+
+/* Footer */
 footer {
-    background-color: #004080;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
