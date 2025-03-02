@@ -51,6 +51,14 @@ main {
   border-radius: 10px;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul li::before {
+  content: "- "; 
+}
+
 /* Login Page Styling */
 
 #login-container {
@@ -75,8 +83,16 @@ main {
 #login h2 {
   font-size: 22px;
   font-weight: bold;
-  color: #004080;
   margin-bottom: 20px;
+  text-align: center;
+  color: darkblue;
+}
+.login-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: darkblue;
 }
 
 
