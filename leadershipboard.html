@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Leaderboard - LMS</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <header>
@@ -14,16 +14,16 @@
 
     <div>
         <nav>
-            <a href="index.html">Homepage</a> | 
+            <a href="index.html">Homepage</a>
             <a href="course_view.html">Courses</a> 
         </nav>
     </div>
 
-    <main>
+    <main class="leaderboard">
         <br>
         <br>
-        <table class="leaderboard-table">
-            <tr style="background-color: #4CAF50; color: white;font-size: 36px;">
+        <table class="leadertab">
+            <tr class="heading">
                 <th colspan="5">Leaderboard</th>
             </tr>
             <tr>
@@ -33,52 +33,52 @@
                 <th>Total Score</th>
                 <th>Course</th>
             </tr>
-            <tr style="background-color: #FFD700;">
+            <tr class="first">
                 <td>1</td>
-                <td><img class="pfp" src="images/student.png" alt="Profile Picture" style="width: 50px; height: 50px;"></td>
+                <td><img src="images/student.png" alt="Profile Picture" style="width: 50px; height: 50px;"></td>
                 <td>John Doe</td>
                 <td>95</td>
                 <td>Web Development</td>
             </tr>
-            <tr style="background-color: #C0C0C0;">
+            <tr class="second">
                 <td rowspan="2">2</td>
-                <td><img class="pfp"src="images/student.png" alt="Profile Picture" style="width: 50px; height: 50px;"></td>
+                <td><img src="images/student.png" alt="Profile Picture" style="width: 50px; height: 50px;"></td>
                 <td>Jane Smith</td>
                 <td>90</td>
                 <td>Data Structures</td>
             </tr>
-            <tr style="background-color: #C0C0C0;">
-                <td><img class="pfp" src="images/student.png" alt="Profile Picture" style="width: 50px; height: 50px;"></td>
+            <tr class="second">
+                <td><img src="images/student.png" alt="Profile Picture" style="width: 50px; height: 50px;"></td>
                 <td>Emily White</td>
                 <td>90</td>
                 <td>Algorithms</td>
             </tr>
-            <tr style="background-color: #CD7F32;">
+            <tr class="third">
                 <td>3</td>
-                <td><img class="pfp" src="images/student.png" alt="Profile Picture" style="width: 50px; height: 50px;"></td>
+                <td><img src="images/student.png" alt="Profile Picture" style="width: 50px; height: 50px;"></td>
                 <td>Michael Brown</td>
                 <td>85</td>
                 <td>Machine Learning</td>
             </tr>
-            <tr style="background-color: #f9f9f9;">
+            <tr class="odd">
                 <td>4</td>
-                <td><img class="pfp" src="images/student.png" alt="Profile Picture" style="width: 50px; height: 50px;"></td>
+                <td><img src="images/student.png" alt="Profile Picture" style="width: 50px; height: 50px;"></td>
                 <td>Sarah Johnson</td>
                 <td>80</td>
                 <td>Networking</td>
             </tr>
-            <tr style="background-color: #e4e2e2;">
-                <td>4</td>
-                <td><img class="pfp" src="images/student.png" alt="Profile Picture" style="width: 50px; height: 50px;"></td>
+            <tr class="even">
+                <td>5</td>
+                <td><img src="images/student.png" alt="Profile Picture" style="width: 50px; height: 50px;"></td>
                 <td>Rob Miller</td>
                 <td>75</td>
                 <td>Networking</td>
             </tr>
         </table>
     </main>
+
     <footer>
         <p>&copy; 2025 LMS. All rights reserved.</p>
     </footer>
-
 </body>
 </html>

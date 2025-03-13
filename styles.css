@@ -222,51 +222,45 @@ select {
 }
 
 
-/* Leaderboard css Table */
-table {
-  border-collapse: collapse;
-  width: 100%;
+/* Leaderboard */
+main[class="leaderboard"] tr[class="heading"]{
+  background-color: #4CAF50; 
+  color: white;
+  font-size: 36px;
+}
+
+table[class="leadertab"]{
+  
+  border-collapse: separate; 
+  width: 100%; 
   text-align: center;
   font-size: 20px;
 }
 
-
-.leaderboard-table th, .leaderboard-table td {
-  border: 1px solid black;
-  padding: 10px;
+tr[class="first"]{
+  background-color: #FFD700;
 }
 
-
-.Leaderboard {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 36px;
+tr[class="second"]{
+  background-color: #C0C0C0;
 }
-tr:nth-child(even) {
+
+tr[class="third"]{
+  background-color: #CD7F32;
+}
+
+tr[class="odd"]{
   background-color: #f9f9f9;
 }
 
-tr:nth-child(odd) {
+tr[class="even"]{
   background-color: #e4e2e2;
 }
 
-.leaderboard-table tr:first-child {
-  background-color: #FFD700; /* Gold for 1st place */
-}
-
-.leaderboard-table tr:nth-child(3) {
-  background-color: #C0C0C0; /* Silver for 2nd place */
-}
-
-.leaderboard-table tr:nth-child(4) {
-  background-color: #CD7F32; /* Bronze for 3rd place */
-}
-
-img.pfp {
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  border: 2px solid black;
+table[class="leadertab"] td img {
+  width: 100%;
+  border-radius: 50px;
+  border: 1px solid #000000;
 }
 
 /* Quiz Page Styling */

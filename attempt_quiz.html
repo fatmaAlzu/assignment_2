@@ -1,74 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title> LMS - Learning Management System</title>
+<head>
+    <title>LMS - Attempt Quiz</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
-  <img src="images/logo.jpg" width = "100px", height = "100px" >
-  <h1>LMS - Learning Management System</h1>
-  
+    <img src="images/logo.jpg" width="100px" height="100px">
+    <h1>LMS - Learning Management System</h1>
 </header>
 
 <nav>
-  <a href = "index.html">Homepage</a>
-  <a href = "course_view.html">Courses</a><br><br>
+    <a href="index.html">Homepage</a>
+    <a href="course_view.html">Courses</a><br><br>
 </nav>
 
 <main>
     <br>
-<div class = "quiz-banner">
-    <img src="/images/banner.jpg">
-</div>
-  
-<div class="quiz-details">
-  <h2>Course Name: Web Development</h2>
-  <h3>Course Code: WD381</h3>
+    <div class="quiz-banner">
+        <img src="images/banner.jpg">
+    </div>
 
-  <p><strong>Topic:</strong> HTML Basics</p>
-  <p><strong>Deadline:</strong> 11:59 PM, February 10, 2025</p>
-  <p><strong>Attempts Allowed:</strong> 1</p>
-</div>
+    <div class="quiz-details">
+        <h2>Course Name: Web Development</h2>
+        <h3>Course Code: WD381</h3>
+        <p><strong>Topic:</strong> HTML Basics</p>
+        <p><strong>Deadline:</strong> 11:59 PM, February 10, 2025</p>
+        <p><strong>Attempts Allowed:</strong> 1</p>
+    </div>
 
+   
+    <div class="timer">
+        <h3>Time Remaining: <span id="timer">10:00</span></h3>
+    </div>
+
+    
     <p><strong>Question 1</strong></p>
     <p>What does HTML stand for?</p>
-<div class = "quiz-question">
-    <div class = "quiz-options">
-        <input type="radio" id="firstoption" name="q1">
-        <label for="firstoption">Hyper Text Markup Language</label><br>
-        <input type="radio" id="second_option" name="q1">
-        <label for="second_option">Home Tool Markup Language</label><br>
+    <div class="quiz-question">
+        <div class="quiz-options">
+            <input type="radio" id="firstoption" name="q1" value="correct">
+            <label for="firstoption">Hyper Text Markup Language</label><br>
+            <input type="radio" id="second_option" name="q1" value="wrong">
+            <label for="second_option">Home Tool Markup Language</label><br>
+        </div>
     </div>
-</div>
-<button class = "submit-btn">Submit Answer</button>
-
-    <p><strong>Question 2</strong></p>
-    <p>Which of the following are HTML elements? (Select all that apply)</p>
-  <div class = "quiz-question">
-    <div class = "quiz-options">
-    <input type="checkbox" id="optionA">
-    <label for="optionA">&lt;div&gt;</label><br>
-    <input type="checkbox" id="optionB">
-    <label for="optionB">&lt;span&gt;</label>
-    </div>
-    <br>
-  </div>
-
-  <button class = "submit-btn">Submit Answer</button>
-<br>
-
-
-  <button class = "finish-btn" onclick="window.location.href='leadershipboard.html';">Finish Quiz</button>
-
 
   
+    <p><strong>Question 2</strong></p>
+    <p>Which of the following are HTML elements? (Select all that apply)</p>
+    <div class="quiz-question">
+        <div class="quiz-options">
+            <input type="checkbox" id="optionA" value="correct">
+            <label for="optionA">&lt;div&gt;</label><br>
+            <input type="checkbox" id="optionB" value="correct">
+            <label for="optionB">&lt;span&gt;</label><br>
+            <input type="checkbox" id="optionC" value="wrong">
+            <label for="optionC">RandomElement</label>
+        </div>
+    </div>
+    
+    <button class="submit-btn" onclick="submitQuiz()">Submit Quiz</button>
+
+   
+    <h3 id="scoreDisplay"></h3>
+
 </main>
 
 <footer>
-  <p>&copy; 2025 LMS. All rights reserved.</p>
+    <p>&copy; 2025 LMS. All rights reserved.</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
