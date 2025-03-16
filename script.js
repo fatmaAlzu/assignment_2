@@ -1,4 +1,41 @@
 document.addEventListener("DOMContentLoaded", function () {
+    //login
+    const loginForm = document.getElementById("login-form");
+    const messageBox = document.getElementById("message-box");
+
+    if (loginForm) {
+        loginForm.addEventListener("submit", async function (event) {
+            event.preventDefault();
+
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            try {
+                const response = await fetch("https://jsonplaceholder.typicode.com/users");
+                const users = await response.json();
+
+                const user = users.find(u => u.username === username && u.email === password);
+
+                if (user) {
+                    showMessage("success", "Login successful! Redirecting...");
+                    setTimeout(() => {
+                        window.location.href = "course_view.html";
+                    }, 2000);
+                } else {
+                    showMessage("error", "Invalid credentials. Please try again.");
+                }
+            } catch (error) {
+                showMessage("error", "An error occurred. Please try again.");
+            }
+        });
+
+        function showMessage(type, message) {
+            messageBox.textContent = message; 
+            messageBox.className = type; 
+            messageBox.classList.remove("hidden");
+
+        }
+    }
     // Exercise 1: Dynamic Enrollment
     const pendingCourses = document.querySelectorAll(".accept-btn, .decline-btn");
 
