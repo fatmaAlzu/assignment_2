@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> LMS - Learning Management System</title>
+        <title>LMS - Learning Management System</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
@@ -14,12 +14,13 @@
         <nav>
             <a href="index.html">Homepage</a>
         </nav>
-        <h2 class= "login-title">LMS Login</h2>
+
+        <h2 class="login-title">LMS Login</h2>
+
         <main>
             <div id="login-container">
                 <section id="login">
-                   
-                    <form action="course_view.html" method="post">
+                    <form id="login-form">
                         <label for="username">Username:</label>
                         <input type="text" id="username" name="username" required><br>
 
@@ -28,15 +29,15 @@
                     </form>
                 </section>
 
-                <button type="submit">Login</button>
+                <div id="message-box"></div> 
+                <button id="login-button">Login</button>
 
-                <div id="message-box" class = "hidden"></div>
-
-                
                 <a href="#" id="forgot-password">Forgot Password?</a>
-                <p>Don't have an account?<a href= "signup.html" id = "signup-link">Sign Up</a></p>
+                <p>Don't have an account? <a href="signup.html" id="signup-link">Sign Up</a></p>
             </div>
+
         </main>
+
 
         <footer>
             <p>&copy; 2025 LMS. All rights reserved.</p>
