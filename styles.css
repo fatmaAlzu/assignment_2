@@ -1,3 +1,12 @@
+
+/*
+<!--Fatma Alzubaidi (UCID:30172637)-->
+<!--Faris Janjua (UCID:30154612)-->
+<!--Group 46-->
+*/
+
+
+
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
@@ -139,6 +148,54 @@ button:hover {
 #forgot-password:hover {
   text-decoration: underline;
 }
+
+
+/* Signup page*/
+input[type="email"], 
+input[type="email"] {
+  width: 90%;
+  padding: 10px;
+  border-radius: 5px;
+  border-width: 3px;
+  border: 2px solid darkgray;
+  background-color: lightyellow;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.5;
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: #45A049;
+  opacity: 1.0;
+}
+#error-box {
+  display: none;
+  background-color: white; 
+  border: 2px solid black; 
+  border-radius: 5px;
+  padding: 15px;
+  width: 80%; 
+  max-width: 600px; 
+  margin: 20px auto; 
+  text-align: center; 
+  font-size: 16px;
+  text-align: center;
+  
+}
+
+
+
 
 /* courseview css */
 select {

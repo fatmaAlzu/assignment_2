@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 3000);
     }
 
-    // Exercise 1: Dynamic Enrollment
+    
     const pendingCourses = document.querySelectorAll(".accept-btn, .decline-btn");
 
     pendingCourses.forEach(button => {
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Exercise 2: Quiz Timer
+
     let timeLeft = 600; 
     const timerElement = document.getElementById("timer");
 
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 1000);
     }
 
-    // Exercise 3: Submit Quiz and Calculate Score
+  
     const submitButton = document.querySelector(".submit-btn");
     if (submitButton) {
         submitButton.addEventListener("click", submitQuiz);
@@ -150,5 +150,9 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(() => {
             window.location.href = "leadershipboard.html";
         }, 3000);
+
+
+
+        
     }
 });

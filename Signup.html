@@ -1,0 +1,120 @@
+
+<!--Fatma Alzubaidi (UCID:30172637)-->
+<!--Faris Janjua (UCID:30154612)-->
+<!--Group 46-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LMS - Learning Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" height="80" width="80">
+        <h1>LMS - Learning Management System</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Homepage</a>
+    </nav>
+
+    <h2 class="login-title">Sign Up</h2>
+    <main>
+        <div id="login-container">
+            <section id="login">
+                <form id="signup-form">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required><br>
+
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+
+                    <!-- Sign Up Button (inside the same form) -->
+                    <button type="submit">Sign Up</button>
+                </form>
+            </section>
+
+            <a href="login.html" id="forgot-password">Already have an account? Login here</a>
+        </div>
+    </main>
+
+    <!-- Error Message Box (Styled Like the Assignment) -->
+    <div id="error-box"></div>
+
+    <footer>
+        <p>&copy; 2025 LMS. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("signup-form").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent actual form submission
+    
+            const username = document.getElementById("username").value.trim();
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirm-password").value;
+            const email = document.getElementById("email").value.trim();
+            const errorBox = document.getElementById("error-box");
+    
+            let errors = [];
+    
+            // Username validation
+            const usernameRegex = /^[a-zA-Z][a-zA-Z0-9_-]{2,19}$/;
+            if (!usernameRegex.test(username)) {
+                errors.push("Invalid username (Reason: Must be 3-20 characters long, start with a letter, and contain only alphanumeric characters, hyphens (-), or underscores (_)).");
+            }
+    
+            // Password validation
+            const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()\-_+=\[\]{}|;:'\",.<>?/`~])[A-Za-z\d!@#$%^&*()\-_+=\[\]{}|;:'\",.<>?/`~]{8,}$/;
+            if (!passwordRegex.test(password)) {
+                errors.push("Invalid password (Reason: Must be at least 8 characters long, include one uppercase letter, one lowercase letter, one number, and one special character.)");
+            }
+            if (/\s/.test(password)) {
+                errors.push("Invalid password (Reason: Cannot contain spaces.)");
+            }
+    
+            // Confirm Password validation
+            if (password !== confirmPassword) {
+                errors.push("Passwords do not match");
+            }
+    
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                errors.push("Invalid email (Reason: Must be in the format username@example.com).");
+            }
+    
+            // Clear previous messages
+            errorBox.innerHTML = "";
+            errorBox.style.display = "block"; // Ensure it shows up
+    
+            if (errors.length > 0) {
+                errorBox.style.border = "2px solid black"; 
+                errorBox.style.color = "black"; 
+                errorBox.style.backgroundColor = "white"; 
+    
+                errors.forEach(error => {
+                    const errorItem = document.createElement("p");
+                    errorItem.textContent = error;
+                    errorBox.appendChild(errorItem);
+                });
+            } else {
+                // ✅ Show the success message in the error box  
+                errorBox.style.backgroundColor = "white"; 
+                errorBox.innerHTML = "<p>Signup successful! Redirecting to login page...</p>";
+    
+                // ✅ Wait 2 seconds, then redirect
+                setTimeout(() => {
+                    window.location.href = "login.html";
+                }, 2000);
+            }
+        });
+    </script>
+    
+</body>
+</html>
